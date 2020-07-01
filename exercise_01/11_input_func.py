@@ -22,3 +22,8 @@ print(len(str(num)))
 v1 = "23"
 type(v1)  # <class 'str'>
 print(float(v1))  # 23.0
+
+print(eval("23+23"))
+
+exec("a='Cevheri'")
+print(a)
