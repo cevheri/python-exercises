@@ -1,7 +1,7 @@
 import sys
 
-print(sys.executable)
-print(sys.version)
+# print(sys.executable)
+# print(sys.version)
 
 
 class Employee:
@@ -22,9 +22,9 @@ class Employee:
         """ full name method açıklaması"""
         return '{} {}'.format(self.first, self.last)
 
-
+print("\n")
 emp_1 = Employee('John', 'Smith')
-print(emp_1.email)
-print(emp_1.last)
-print(emp_1.email)
-print(emp_1.fullname)
+print("First Name:", emp_1.first)
+print("Last Name:", emp_1.last)
+print("Email: ", emp_1.email)
+print("Full Name:", emp_1.fullname)
