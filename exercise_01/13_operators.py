@@ -146,7 +146,7 @@ for k in range(-1000, 1000):
             print(k)
 
 ################################################
-#  example
+#  example calculate
 input_val = """
 (1) collect
 (2) take off
@@ -186,6 +186,7 @@ else:
 
 ########################################################################################
 # python version 2.x and 3.x
+
 import sys
 
 print(sys.version_info)
