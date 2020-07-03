@@ -1,18 +1,29 @@
 "# python-exercises" 
 
-#
+### Python Version
+Python 3.x
+
+### IDE
+
+* IDLE(Python Terminal for win)
+* SublimeText
+* PyCharm
+* VsCode
+* Jupyter Notebook
 
 
-#
 
-#
 
-#
+### References : 
 
-ref: https://docs.python.org/3.8/tutorial/index.html
+* https://docs.python.org/3.8/tutorial/index.html
 
-ref: https://realpython.com/
+* https://realpython.com/
 
-ref: http://ogretmen.meb.gov.tr/kitap/python1/index.html
+* https://www.tutorialspoint.com/execute_python3_online.php
 
-ref: http://python-istihza.yazbel.com/
+* http://ogretmen.meb.gov.tr/kitap/python1/index.html
+
+* http://python-istihza.yazbel.com/
+
+* https://colab.research.google.com
