@@ -47,11 +47,11 @@ else:
 print(*"-" * 30)
 #####################################################################################
 # file compare example
-f1 = open("./output/names01", encoding="utf-8")
+f1 = open("output/names01", encoding="utf-8")
 f1_line = f1.readlines()
 f1.close()
 
-f2 = open("./output/names02", encoding="cp1254")
+f2 = open("output/names02", encoding="cp1254")
 f2_line = f2.readlines()
 f2.close()
 
@@ -74,7 +74,7 @@ print(*"-" * 30)
 #####################################################################################
 key = "z"
 val = 0
-places_file = open("./output/places")
+places_file = open("output/places")
 for place_line in places_file:
     for place_key in place_line:
         if key == place_key:
