@@ -22,8 +22,8 @@ Python 3.x
 
 * https://www.tutorialspoint.com/execute_python3_online.php
 
-* http://ogretmen.meb.gov.tr/kitap/python1/index.html
-
 * http://python-istihza.yazbel.com/
+
+* http://ogretmen.meb.gov.tr/kitap/python1/index.html
 
 * https://colab.research.google.com
