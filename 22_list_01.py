@@ -1,4 +1,4 @@
-# list
+# list (mutable)
 
 list0 = []
 
