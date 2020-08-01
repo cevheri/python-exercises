@@ -1,4 +1,5 @@
 # number systems
+# ref: https://docs.python.org/3/library/functions.html
 
 # int = 12
 print([i for i in dir(int) if not i.startswith("_")])
@@ -11,9 +12,9 @@ for i in range(11):
     print(i, bin(i)[2:], len(bin(i)[2:]), sep="\t")
 
 val = 255
-print(val.bit_length()) # or (10).bit_length()
+print(val.bit_length())  # or (10).bit_length()
 
-print(len(bin(10)[2:]) == (10).bit_length()) # True
+print(len(bin(10)[2:]) == (10).bit_length())  # True
 
 ###################################################
 
@@ -25,7 +26,7 @@ print([i for i in dir(float) if not i.startswith("_")])
 
 # as_integer_ratio()
 num = 4.5
-print(num.as_integer_ratio()) # (9, 2)
+print(num.as_integer_ratio())  # (9, 2)
 # 9:2 = 4.5
 
 # is_integer()
@@ -41,8 +42,8 @@ print((12.5).is_integer())
 print([i for i in dir(complex) if not i.startswith("_")])
 # ['conjugate', 'imag', 'real']
 
-print((12+4j).imag) # 4.0
-print((12+4j).real) # 12.0
+print((12 + 4j).imag)  # 4.0
+print((12 + 4j).real)  # 12.0
 
 #########################################################
 # Arithmetic Function
@@ -58,26 +59,32 @@ print((12+4j).real) # 12.0
 # >>>>>>
 
 # abs()
-print(abs(-2)) # 2
-print(abs(2)) # 2
+print(abs(-2))  # 2
+print(abs(2))  # 2
 
 # divmod()
-print(divmod(10, 2)) # (5, 0)
+print(divmod(10, 2))  # (5, 0)
 # 10:2 = 5
 
-print(divmod(14, 3)) # (4, 2)
+print(divmod(14, 3))  # (4, 2)
 # 14 // 3, 14 % 3
 
 # max()
+# !!! int max
 values = [882277, 403538, 441349, 721048, 32859]
-print(max(values)) # 882277
+print(max(values))  # 882277
 
+# !!!!!!!! string max
 names = ["Python", "Programming", "Language"]
-print(max(names))
+print(max(names))  # Python
+print(max(names, key=len))  # Programming
 
+# min()
+print(min(values))  # 32859
+print(min(names, key=len))  # Python
 
-
-
-
-
-
+# sum()
+a = [10, 20, 43, 45, 77, 2, 0, 1]
+print(sum(a))  # 198
+# !!! and and
+print(sum(a, 10))  # 198 + 10 = 208
