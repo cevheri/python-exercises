@@ -1,4 +1,5 @@
 # String
+# ref: https://docs.python.org/3/library/functions.html
 
 val = "Python"
 numbers = "0123456789"
