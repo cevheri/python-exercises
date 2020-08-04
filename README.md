@@ -17,13 +17,9 @@ Python 3.x
 ### References : 
 
 * https://docs.python.org/3.8/tutorial/index.html
-
+* https://github.com/yazbel/python-istihza
+* https://docs.python.org/3/library/functions.html
 * https://realpython.com/
-
 * https://www.tutorialspoint.com/execute_python3_online.php
-
-* http://python-istihza.yazbel.com/
-
 * http://ogretmen.meb.gov.tr/kitap/python1/index.html
-
 * https://colab.research.google.com
