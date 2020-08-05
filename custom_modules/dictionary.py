@@ -1,4 +1,6 @@
 # example module
+# https://pypi.org/
+# Find, install and publish Python packages with the Python Package Index
 dictionary_list = {"kitap": "book",
                    "bilgisayar": "computer",
                    "programlama": "programming"}
