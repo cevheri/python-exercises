@@ -1,6 +1,11 @@
 # builtin functions
-
-
+# import builtins
+# dir(builtins)
+# ...
+# ..
+# .
+#
+# and more ... https://docs.python.org/3/library/functions.html
 """
 abs()
 round()
