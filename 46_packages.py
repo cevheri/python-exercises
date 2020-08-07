@@ -36,6 +36,7 @@ from urllib.request import urlopen
 
 request.urlopen('https://www.djangoproject.com')
 
+# create package
 # + directory                 # package
 # |___module1.py
 # |___module2.py
