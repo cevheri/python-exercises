@@ -63,7 +63,7 @@ print(os.name)  # posix
 print(os.sep)  # /
 
 # get current directory
-print(os.getcwd())  # /home/cevher/projects/python-projects/python-exercises/standard_library_modules
+print(os.getcwd())  # /home/cevher/projects/python-projects/python-exercises/sdtlib
 
 # change directory
 # os.chdir("/usr/bin")
@@ -282,7 +282,7 @@ for k, v in os.environ.items():
 # LC_PAPER   tr_TR.UTF-8
 # SESSION_MANAGER local/NT00782:@/tmp/.ICE-unix/2166,unix/NT00782:/tmp/.ICE-unix/2166
 # LOGNAME    cevher
-# PWD        /home/cevher/projects/python-projects/python-exercises/standard_library_modules
+# PWD        /home/cevher/projects/python-projects/python-exercises/sdtlib
 # PYCHARM_HOSTED 1
 # LANGUAGE   en_US
 # PYTHONPATH /home/cevher/projects/python-projects/python-exercises:/home/cevher/app/pycharm/plugins/python/helpers/pycharm_matplotlib_backend:/home/cevher/app/pycharm/plugins/python/helpers/pycharm_display
