@@ -1,0 +1,11 @@
+# Sanal ortam
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+#Pycharm
+idea/*

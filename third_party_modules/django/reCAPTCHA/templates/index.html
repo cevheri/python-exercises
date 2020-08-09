@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>reCAPTCHA Demo</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+<h4>Yorum Gönder</h4>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="g-recaptcha" data-sitekey="6LdBO6cZAAAAAKVrVb26nQgpBq7L6dva9lMuwTmX"></div>
+    <br/>
+    <input type="submit" value="Gönder">
+</form>
+<hr>
+<h4>Gelen Yorumlar:</h4>
+<hr>
+{% for comment in comments %}
+    <p><b>İsim: {{ comment.name }}</b> <br>Yorum: <b>{{ comment.comment }}</b></p>
+    <hr>
+{% endfor %}
+</body>
+</html>
