@@ -1,7 +1,8 @@
 import sys
 
-# print(sys.executable)
-# print(sys.version)
+
+print(sys.executable)
+print(sys.version)
 
 
 class Employee:
@@ -21,6 +22,7 @@ class Employee:
     def fullname(self):
         """ full name method açıklaması"""
         return '{} {}'.format(self.first, self.last)
+
 
 print("\n")
 emp_1 = Employee('John', 'Smith')

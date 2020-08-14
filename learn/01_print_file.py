@@ -6,12 +6,12 @@ print("Current file directory:", os.getcwd())
 print("Python Keyword List:", keyword.kwlist)
 print(sys.stdout)
 
-output_file = open("output/print_output_file.txt", "w")
+output_file = open("./output/print_output_file.txt", "w")
 print("Python print output example 1", file=output_file)  # flush=False
 output_file.close()
 
 # with flush true
-output_file_flush = open("output/print_output_file_flush.txt", "w")
+output_file_flush = open("./output/print_output_file_flush.txt", "w")
 print("Python print output example 1",
       file=output_file_flush,
       flush=True)
@@ -25,7 +25,7 @@ print(*"Linux", sep=".")
 print(*"Manjaro")
 
 # stdout file >> make permanent
-per_file = open("output/stdout.log", "w")
+per_file = open("./output/stdout.log", "w")
 sys.stdout, orj_stdout = per_file, sys.stdout
 print("stdout log", flush=True)
 print(sys.stdout, flush=True)  # <_io.TextIOWrapper name='./output/stdout.log' mode='w' encoding='cp1254'>
