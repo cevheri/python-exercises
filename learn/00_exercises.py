@@ -494,3 +494,26 @@ print(has_friday_13(2, 2043), True)
 print(has_friday_13(4, 2043), False)
 print(has_friday_13(3, 2043), True)
 print(has_friday_13(11, 2043), True)
+
+####################################
+
+def rod(num):
+    return [i for i in range(2, num + 1, 2) if num % 2 == 0]
+
+
+print(rod(8))
+print(rod(6))
+print(rod(4))
+print(rod(2))
+print(rod(0))
+print(rod(1))
+print(rod(7))
+
+
+def mord(val):
+    translate_table = str.maketrans("aeiou", "01223")
+    lav = val[::-1].translate(translate_table)
+    return lav + "aca"
+
+
+print(mord("karaca"))
