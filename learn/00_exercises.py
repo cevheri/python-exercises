@@ -746,4 +746,32 @@ print(re.findall(pattern, txt4), ['blue flag', 'red flag', 'red flag', 'blue fla
 
 # Translated from JavaScript.
 # The RegEx series was originally posted by Isaac Pak.
+######################################################################################################################
 
+# Collatz conjecture
+# n = 12, one gets the sequence 12, 6, 3, 10, 5, 16, 8, 4, 2, 1.
+#
+# n = 19, for example, takes longer to reach 1: 19, 58, 29, 88, 44, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1.
+
+
+print()
+print("Collatz conjecture")
+
+
+def collatz(n):
+    if n == 1:
+        return 0
+    elif n % 2 == 0:
+        n = n / 2
+    else:
+        n = n * 3 + 1
+
+    return 1 + collatz(n)
+
+
+print(collatz(2), 1)
+print(collatz(3), 7)
+print(collatz(10), 6)
+print(collatz(6), 8)
+print(collatz(345), 125)
+print(collatz(72), 22)
