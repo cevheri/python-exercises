@@ -1,0 +1,45 @@
+ERROR:root:Read Configuration Error: <class 'json.decoder.JSONDecodeError'>>Expecting value: line 1 column 1 (char 0)
+ERROR:root:Read Configuration Error: <class 'FileNotFoundError'>>[Errno 2] No such file or directory: 'param2.json'
+ERROR:root:Read Configuration Error: <class 'FileNotFoundError'>>[Errno 2] No such file or directory: 'param2.json'
+ERROR:root:Read Configuration Error: <class 'FileNotFoundError'>>[Errno 2] No such file or directory: 'param2.json'
+ERROR:root:Read Configuration Error: <class 'json.decoder.JSONDecodeError'>>Expecting value: line 1 column 1 (char 0)
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_15_59_34
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_00_07
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_02_18
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_02_22
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_02_28
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_02_30
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_02_38
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_02_53
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_02_55
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_02_57
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_02_59
+INFO:root:Deleted :> E:\backups\backup_2020_08_29_15_59_34
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_03_01
+INFO:root:Deleted :> E:\backups\backup_2020_08_29_16_00_07
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_05_21
+INFO:root:Deleted :> E:\backups\backup_2020_08_29_16_02_57
+INFO:root:Deleted :> E:\backups\backup_2020_08_29_16_02_55
+INFO:root:Deleted :> E:\backups\backup_2020_08_29_16_02_53
+INFO:root:Deleted :> E:\backups\backup_2020_08_29_16_02_38
+INFO:root:Deleted :> E:\backups\backup_2020_08_29_16_02_30
+INFO:root:Deleted :> E:\backups\backup_2020_08_29_16_02_28
+INFO:root:Deleted :> E:\backups\backup_2020_08_29_16_02_22
+INFO:root:Deleted :> E:\backups\backup_2020_08_29_16_02_18
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_06_32
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_06_34
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_06_36
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_06_38
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_06_39
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_06_41
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_06_43
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_06_45
+INFO:root:Deleted :> E:\backups\backup_2020_08_29_16_02_59
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_06_48
+INFO:root:Deleted :> E:\backups\backup_2020_08_29_16_03_01
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_13_38
+INFO:root:Deleted :> E:\backups\backup_2020_08_29_16_05_21
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_13_43
+INFO:root:Deleted :> E:\backups\backup_2020_08_29_16_06_32
+INFO:root:Copied :> C:\Windows\Cursors --> E:\backups\backup_2020_08_29_16_13_47
+INFO:root:Deleted :> E:\backups\backup_2020_08_29_16_06_34
