@@ -495,6 +495,7 @@ print(has_friday_13(4, 2043), False)
 print(has_friday_13(3, 2043), True)
 print(has_friday_13(11, 2043), True)
 
+
 ####################################
 
 def rod(num):
@@ -517,3 +518,232 @@ def mord(val):
 
 
 print(mord("karaca"))
+
+
+def factorial(val):
+    return val if val <= 2 else (val * factorial(val - 1))
+
+
+print(factorial(0))
+print(factorial(1))
+print(factorial(2))
+print(factorial(3))
+print(factorial(4))
+
+print(list("abc") == sorted("abc"))
+
+print()
+print("filter digit")
+
+
+def filter_list(params):
+    # isdigit -> remove duplicate(to set) -> to list
+    return [int(i) for i in params if str(i).isdigit() and i not in params]
+
+
+print(filter_list([1, 2, "a", "b"]), [1, 2])
+print(filter_list([1, "a", "b", 0, 15]), [1, 0, 15])
+print(filter_list([1, 2, "aasf", "1", "123", 123]), [1, 2, 123])
+print(filter_list(["jsyt", 4, "yt", "6"]), [4])
+print(filter_list(["r", 5, "y", "e", 8, 9]), [5, 8, 9])
+print(filter_list(["a", "e", "i", "o", "u"]), [])
+print(filter_list([4, "z", "f", 5]), [4, 5])
+print(filter_list(["abc", 123]), [123])
+print(filter_list(["$%^", 567, "&&&"]), [567])
+print(filter_list(["w", "r", "u", 43, "s", "a", 76, "d", 88]), [43, 76, 88])
+
+
+###################################################################################33
+
+def remove_enemies(source, target):
+    # return list(set(names).symmetric_difference(set(enemies)))
+    return [i for i in source if i not in target]
+
+
+print(remove_enemies(["Steve", "Eleanor"], []), ["Steve", "Eleanor"])
+print(remove_enemies(["Jeff", "Charlie", "James", "Fredrick"], ["James", "Jeff"]), ["Charlie", "Fredrick"])
+print(remove_enemies(["Amelia", "Max", "Isobel", "Alex", "Phil"], ["Phil", "Max"]), ["Amelia", "Isobel", "Alex"])
+print(remove_enemies(["John", "Skye", "Alexander", "Skye", "Tony"], ["Skye", "John"]), ["Alexander", "Tony"])
+
+
+#########################################
+# Transform into a List with No Duplicates
+def setify(lst):
+    return sorted(list(dict.fromkeys(lst)))
+
+
+# Original challenge by @Helen Yu
+
+print(setify([1, 3, 3, 5, 5]), [1, 3, 5])
+print(setify([4, 4, 4, 4]), [4])
+print(setify([5, 7, 8, 9, 10, 15]), [5, 7, 8, 9, 10, 15])
+print(setify([5, 9, 9]), [5, 9])
+print(setify([1, 2, 3, 4, 5, 5, 6, 6, 7]), [1, 2, 3, 4, 5, 6, 7])
+print(setify([1, 1, 2, 2, 2]), [1, 2])
+
+#####################################################################33
+# Stand in Line
+print()
+
+
+def next_in_line(lst, num):
+    return "No list has been selected" if not lst else (lst + [num])[1:]
+
+
+print(next_in_line([5, 6, 7, 8, 9], 1), [6, 7, 8, 9, 1])
+print(next_in_line([7, 6, 3, 23, 17], 10), [6, 3, 23, 17, 10])
+print(next_in_line([1, 10, 20, 42], 6), [10, 20, 42, 6])
+print(next_in_line([], 6), "No list has been selected")
+print(next_in_line([0], 1), [1])
+##############################################################
+
+print()
+
+
+def alphanumeric_restriction(param):
+    return param.isdigit() or param.isalpha()
+
+
+print(alphanumeric_restriction("Bold"), True)
+print(alphanumeric_restriction("123454321"), True)
+print(alphanumeric_restriction("H3LL0"), False)
+print(alphanumeric_restriction("hhefuhiwfgn"), True)
+print(alphanumeric_restriction("0"), True)
+print(alphanumeric_restriction("hhefuhiwfgn"), True)
+print(alphanumeric_restriction("ed@bit"), False)
+print(alphanumeric_restriction("only letters right"), False)
+print(alphanumeric_restriction("132 143 234"), False)
+print(alphanumeric_restriction("()"), False)
+print(alphanumeric_restriction("Hello"), True)
+print(alphanumeric_restriction("10,000"), False)
+print(alphanumeric_restriction("1a2b3c"), False)
+print(alphanumeric_restriction(""), False)
+
+print()
+
+
+def XO(txt):
+    a = txt.lower().count("a")
+    b = txt.lower().count("o")
+
+
+print(XO("ooxx"), True)
+print(XO("xooxx"), False)
+print(XO("ooxXm"), True)
+print(XO("zpzpzpp"), True)
+print(XO("zzoo"), False)
+print(XO("Xo"), True)
+print(XO("x"), False)
+print(XO("o"), False)
+print(XO("xxxoo"), False)
+print(XO(""), True)
+
+
+####################################################
+
+def str_to_dict(lst):
+    d = {i.split("=")[0]: i.split("=")[1] for i in lst}
+
+    for i in lst:
+        a = i.split("=")
+        b = i.split("=", 0)
+        c = i.split("=", 1)
+        d = i.split("=", -1)
+
+        print(i)
+
+
+print(str_to_dict(["name=bob", "balance=500", "salary=10000", "friends=0"]),
+      {"name": "bob", "balance": "500", "salary": "10000", "friends": "0"})
+print(str_to_dict(["bob=human", "lola=dog", "mittens=cat", "todd=frog"]),
+      {"bob": "human", "lola": "dog", "mittens": "cat", "todd": "frog"})
+print(str_to_dict(["greeting=Hello There!", "dismissal=Goodbye!", "thanks=Thank you!"]),
+      {"greeting": "Hello There!", "dismissal": "Goodbye!", "thanks": "Thank you!"})
+print(str_to_dict(["dog=bark", "cat=meow", "cow=moo"]), {"dog": "bark", "cat": "meow", "cow": "moo"})
+print(str_to_dict(["1=one", "2=two", "3=three", "4=four"]), {"1": "one", "2": "two", "3": "three", "4": "four"})
+
+
+##########################################
+
+def combinations(*items):
+    result = 1
+    for x in items:
+        if x != 0:
+            result = result * x
+    return result
+
+
+def combinations2(*items):
+    return (i for i in items)
+
+
+print(combinations(2), 2)
+print(combinations(2, 3), 6)
+print(combinations(3, 5), 15)
+print(combinations(5, 6, 7), 210)
+print(combinations(5, 5, 5, 5), 625)
+print(combinations(3, 6, 9), 162)
+print(combinations(2, 3, 4, 5, 6, 7, 8, 9, 10), 3628800)
+print(combinations(4, 5, 6), 120)
+print(combinations(5, 6, 7, 8), 1680)
+print(combinations(6, 7, 0), 42)
+
+###################################################################
+
+print(10 // 2)
+
+1, 2, 3, 4, 5
+
+
+def consecutive_combo(lst1, lst2):
+    lst = lst1 + lst2
+    return sum(lst) == (min(lst) + max(lst)) * len(lst) // 2
+
+
+def name_shuffle(txt):
+    return " ".join(list(reversed(txt.split())))
+
+
+def end_corona(r, n, a):
+    day = 0
+    while a > 0:
+        a -= r - n
+        day += 1
+    return day
+
+
+print(end_corona(4000, 2000, 77000), 39)
+print(end_corona(3000, 2000, 50699), 51)
+print(end_corona(30000, 25000, 390205), 79)
+print(end_corona(260000, 255000, 20511691), 4103)
+
+
+def multiply(l):
+    return list((list([i] * len(l)) for i in l))
+
+
+print(multiply(["*", "%", "$"]), [["*", "*", "*"], ["%", "%", "%"], ["$", "$", "$"]])
+print(multiply([4, 5]), [[4, 4], [5, 5]])
+print(multiply(["A", "B", "C", "D", "E"]),
+      [["A", "A", "A", "A", "A"], ["B", "B", "B", "B", "B"], ["C", "C", "C", "C", "C"], ["D", "D", "D", "D", "D"],
+       ["E", "E", "E", "E", "E"]])
+print(multiply([1]), [[1]])
+
+########################################################################################################
+print("regex")
+
+txt1 = 'red flag blue flag'
+txt2 = 'yellow flag red flag blue flag green flag'
+txt3 = 'pink flag red flag black flag blue flag green flag red flag'
+txt4 = 'blue flag red flag red flag blue flag green flag red flag'
+pattern = r"(?:red|blue)\sflag"
+
+print('|' in pattern, True, 'You must use the vertical bar alternation in your expression')
+print(re.findall(pattern, txt1), ['red flag', 'blue flag'])
+print(re.findall(pattern, txt2), ['red flag', 'blue flag'])
+print(re.findall(pattern, txt3), ['red flag', 'blue flag', 'red flag'])
+print(re.findall(pattern, txt4), ['blue flag', 'red flag', 'red flag', 'blue flag', 'red flag'])
+
+# Translated from JavaScript.
+# The RegEx series was originally posted by Isaac Pak.
+
